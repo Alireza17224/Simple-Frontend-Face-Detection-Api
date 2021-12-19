@@ -32,7 +32,7 @@ body {
     right: 0px;
     left: 0px;
     bottom: 0px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
 }
 .place {
     width: 90%;
@@ -75,8 +75,10 @@ body {
 .tabs {
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #495158;
+    border-bottom: 3px solid #474a4d;
     position: relative;
+    width: 50%;
+    margin: 0 auto;
 }
 .tab {
     width: 50%;
@@ -86,7 +88,7 @@ body {
     text-align: center;
     font-weight: bold;
     padding-bottom: 20px;
-    color: #6a737e;
+    color: #474a4d;
     cursor: pointer;
 }
 .btn {

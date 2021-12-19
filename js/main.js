@@ -7,7 +7,6 @@ const ui = (function(){
         new_classes : document.getElementsByClassName('new-classes'),
         OpenCamera : document.getElementsByClassName('OpenCamera'),
         timer : document.querySelector('.timer'),
-        showResult : document.querySelector('.showResult'),
     }
     return {
         elements,
@@ -19,11 +18,6 @@ const model = (function(){
         prevPlace : '',
         timerStatus : false , 
         timerStart : 5,
-    }
-    function showResponse(ImageURL){
-        ui.elements.showResult.classList.toggle('showModal');
-        ui.elements.showResult.querySelector('img').src = ImageURL;
-        ui.elements.showResult.querySelector('.response').innerText = 'عکس با موفقیت گرفته شد'
     }
     function process(className){
         for (let i = 0;i < ui.elements.tab.length;i++){
@@ -63,7 +57,6 @@ const model = (function(){
         process , 
         changingPosition , 
         b64toBlob , 
-        showResponse , 
     }
 })()
 const controller = (function(){
@@ -143,7 +136,7 @@ const controller = (function(){
                         }
                         document.querySelector('.video').style.left = '-400px';
                         model.elements.timerStatus = true;
-                        model.showResponse(ImageURL);
+                        console.log(ImageURL)
                     }
                     else {
                         ui.elements.timer.innerText = time - 1;
