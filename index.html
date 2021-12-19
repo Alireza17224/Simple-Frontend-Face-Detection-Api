@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Demo Design</title>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="place">
+            <div class="profile">
+                <img src="images/profile.webp" class="user-profile" alt="">
+                <div class="plus"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="container">
+                <div class="tabs">
+                    <div class="tab active-tab" data-name="register">ثبت نام</div>
+                    <div class="tab" data-name="login">ورود</div>
+                    <div class="btn left"></div>
+                </div>
+                <div class="register" style="display: block;">
+                    <div class="line" data-mode="register-menual" dir="rtl">
+                        <img width="60px" src="images/manual.png" alt="manual">
+                        <p class="title-line">روش معمولی ثبت نام را استفاده میکنم</p>
+                    </div>
+                    <div class="line" data-mode="register-modern" dir="rtl">
+                        <img width="60px" src="images/camera.png" alt="camera">
+                        <p class="title-line">روش مدرن ثبت نام را استفاده میکنم</p>
+                    </div>
+                    <button class="custom-btn btn-3 mx-auto startChoosing"><span>ثبت انتخاب</span></button>
+                </div>   
+                <div class="login" style="display: none;">
+                    <div class="line" data-mode="login-menual" dir="rtl">
+                        <img width="60px" src="images/manual.png" alt="manual">
+                        <p class="title-line">روش معمولی لاگین را استفاده میکنم</p>
+                    </div>
+                    <div class="line" data-mode="login-modern" dir="rtl">
+                        <img width="60px" src="images/camera.png" alt="camera">
+                        <p class="title-line">روش مدرن لاگین را استفاده میکنم</p>
+                    </div>
+                    <button class="custom-btn btn-3 mx-auto startChoosing"><span>ثبت انتخاب</span></button>
+                </div>  
+                <div class="register-menual new-classes" style="display: none;">
+                    <input type="text" placeholder="نام">
+                    <input type="text" placeholder="نام کاربری">
+                    <input type="text" placeholder="رمز عبور">
+                    <input type="text" placeholder="کد ملی">
+                    <button class="custom-btn btn-3 mx-auto"><span>ثبت اطلاعات</span></button>
+                </div> 
+                <div class="register-modern new-classes" style="display: none;">
+                    <input type="text" placeholder="نام">
+                    <input type="text" placeholder="نام کاربری">
+                    <input type="text" placeholder="رمز عبور">
+                    <button class="custom-btn btn-3 mx-auto"><span>ثبت اطلاعات</span></button>
+                </div>  
+                <div class="login-menual new-classes" style="display: none;">
+                    <input type="text" placeholder="نام کاربری">
+                    <input type="text" placeholder="رمز عبور">
+                    <button class="custom-btn btn-3 mx-auto"><span>ثبت اطلاعات</span></button>
+                </div>  
+                <div class="login-modern new-classes" style="display: none;">
+                    <button class="custom-btn btn-3 mx-auto pt-3 OpenCamera"><span>روشن کردن دوربین</span></button>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <form id="myAwesomeForm" method="post" style="display: none;" action="/php-code-that-handles-fileupload.php">
+        <input type="text" id="filename" name="filename" /> <!-- Filename -->
+        <input type="submit" id="submitButton" name="submitButton" /> <!-- Submit -->
+    </form>    
+    <div class="video" style="display: none;">
+        <video id="webcam" autoplay playsinline width="640" height="480"></video>
+        <canvas id="canvas" class="d-none"></canvas>
+        <div class="timer"></div>
+        <audio id="snapSound" class="d-none" src="audio/snap.wav" preload = "auto"></audio>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
