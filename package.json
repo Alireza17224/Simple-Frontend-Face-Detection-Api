@@ -1,0 +1,20 @@
+{
+  "name": "design-tabs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javane-nikan46-1/frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Javane-nikan46-1/frontend/issues"
+  },
+  "homepage": "https://github.com/Javane-nikan46-1/frontend#readme"
+}

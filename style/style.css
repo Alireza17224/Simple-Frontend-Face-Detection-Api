@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family: 'Vazir-reg';
+    font-family: 'Poppins-Medium';
 }
 body {
     padding: 0px;
@@ -10,12 +10,12 @@ body {
     box-sizing: border-box;
 }
 @font-face {
-    font-family: 'Vazir-reg';
-    src: url('../fonts/Vazir-Regular.ttf');
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.ttf');
 }
 @font-face {
-    font-family: 'Vazir-Bold';
-    src: url('../fonts/Vazir-Bold.ttf');
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.ttf');
 }
 .app {
     background-image: url('../images/mjh-shikder-k4KrFtAMs5s-unsplash.jpg');
@@ -116,7 +116,7 @@ body {
     transition: 300ms;
 }
 .title-line {
-    padding-right: 20px;
+    padding-left: 20px;
 }
 .custom-btn {
     width: 130px;
@@ -124,7 +124,7 @@ body {
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
-    font-family: 'Vazir-Bold';
+    font-family: 'Poppins-Bold';
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -229,7 +229,7 @@ body {
 input {
     width: 60%;
     background-color: #fff;
-    direction: rtl;
+    direction: ltr;
     display: block;
     margin: 24px auto;
     padding: 10px 15px;
