@@ -16,6 +16,6 @@ There is is code like :
 line 71 js/controller.js
 const url = 'API_URL';
 ```
-you need to change the ```API_URL``` with the url in API . You also might need to chang the fetch structure!
+you need to change the ```API_URL``` with the url in API . You also might need to change the fetch structure!
 
 enjoy !
